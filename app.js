@@ -19,12 +19,14 @@ function addTodo(event) {
     //todo DIV
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
+    
 
     //Create LI
     const newTodo = document.createElement('li');
     newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
+    
 
     //Add to LocalStorage
     saveLocalTodos(todoInput.value);
